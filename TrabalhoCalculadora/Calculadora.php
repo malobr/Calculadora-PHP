@@ -123,6 +123,8 @@
 
 
          </form> 
+         <button onclick="saveToMemory()">Salvar na Memória</button>
+         <button onclick="retrieveFromMemory()">Recuperar Memória</button>
          <div id="result"></div>
       </div>
 
@@ -147,7 +149,28 @@
 
    ?>
    <script>
-      
+      <script>
+      function saveToMemory() {
+        var num1 = document.querySelector('input[name="num1"]').value;
+        var num2 = document.querySelector('input[name="num2"]').value;
+        var operacao = document.querySelector('input[name="operacao"]:checked').value;
+        sessionStorage.setItem('numero1', num1);
+        sessionStorage.setItem('numero2', num2);
+        sessionStorage.setItem('operacao', operacao);
+    }
+
+    function retrieveFromMemory() {
+        var num1 = sessionStorage.getItem('numero1');
+        var num2 = sessionStorage.getItem('numero2');
+        var operacao = sessionStorage.getItem('operacao');
+        if (num1 && num2 && operacao) {
+            document.querySelector('input[name="num1"]').value = num1;
+            document.querySelector('input[name="num2"]').value = num2;
+            document.querySelector('input[name="operacao"][value="' + operacao + '"]').checked = true;
+        }
+    }
+</script>
+
    </script>
    </body>
 </html>
