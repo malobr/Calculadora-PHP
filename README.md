@@ -23,8 +23,6 @@ Esta é uma calculadora simples desenvolvida em PHP, HTML e JavaScript que permi
 - PHP
 - HTML
 - JavaScript
+- MUITO CAFE...
 
-## Notas
 
-- Esta calculadora não possui tratamento para erros ou validação de entrada de dados. Certifique-se de inserir números válidos e selecionar uma operação antes de realizar o cálculo.
-- O estado salvo na memória do navegador será perdido ao fechar a aba ou atualizar a página.
