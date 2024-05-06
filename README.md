@@ -25,4 +25,10 @@ Esta é uma calculadora simples desenvolvida em PHP, HTML e JavaScript que permi
 - JavaScript
 - MUITO CAFE...
 
+Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/malobr/Calculadora-PHP.git
+```
+
 
