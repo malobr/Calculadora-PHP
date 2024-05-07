@@ -210,7 +210,7 @@ if (isset($_POST['retrieve_from_memory'])) {
     }
     ?>
 
-   <script>
+<script>
         function saveOrRetrieve() {
             var num1 = document.querySelector('input[name="num1"]').value;
             var num2 = document.querySelector('input[name="num2"]').value;
